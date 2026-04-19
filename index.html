@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Privacy Policy for Quran Pro app">
+<meta name="description" content="Privacy Policy for Solar System educational app">
 <title>Privacy Policy</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
@@ -18,7 +18,6 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Navbar */
 .nav {
     position: fixed;
     top: 0;
@@ -32,7 +31,6 @@ body {
     z-index: 1000;
 }
 
-/* Hero */
 .hero {
     margin-top: 80px;
     text-align: center;
@@ -46,14 +44,12 @@ body {
     color: #38bdf8;
 }
 
-/* Container */
 .container {
     max-width: 1000px;
     margin: 40px auto;
     padding: 20px;
 }
 
-/* Card */
 .card {
     background: rgba(30,41,59,0.7);
     backdrop-filter: blur(15px);
@@ -62,7 +58,6 @@ body {
     box-shadow: 0 10px 40px rgba(0,0,0,0.5);
 }
 
-/* Sections */
 h2 {
     margin-top: 40px;
     color: #38bdf8;
@@ -73,7 +68,6 @@ p {
     color: #cbd5f5;
 }
 
-/* Features */
 .features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
@@ -95,7 +89,6 @@ p {
     margin-bottom: 10px;
 }
 
-/* Animation */
 .fade {
     opacity: 0;
     transform: translateY(30px);
@@ -111,7 +104,6 @@ p {
     50% {transform: translateY(-10px);}
 }
 
-/* Top Button */
 .top-btn {
     position: fixed;
     bottom: 20px;
@@ -133,8 +125,8 @@ p {
 
 <!-- Hero -->
 <div class="hero">
-    <img src="https://play-lh.googleusercontent.com/zoyAL6BWpiHrgyFEujQcEXhBqZn4SfX0JiIFqOecs2JoZYy39Yam8xiz7Vq6kP7S2w" alt="App Icon">
-    <h1>Quran Pro</h1>
+    <img src="https://cdn-icons-png.flaticon.com/512/3212/3212608.png" alt="Solar System Icon">
+    <h1>Solar System Explorer</h1>
 </div>
 
 <div class="container">
@@ -142,30 +134,50 @@ p {
 
 <h2 class="fade">About the App</h2>
 <p class="fade">
-Quran Pro is an application designed to provide accurate prayer times, Qibla direction, and Islamic content in a simple and reliable way.
+Solar System Explorer is an educational application designed to help users explore the solar system in an interactive and visual way. The app simulates planetary motion using simplified scientific models to provide a realistic and engaging learning experience.
 </p>
 
 <h2 class="fade">Features</h2>
 <div class="features fade">
     <div class="feature">
-        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Prayer Times">
-        <p>Accurate Prayer Times</p>
+        <img src="https://cdn-icons-png.flaticon.com/512/3212/3212608.png" alt="Planets">
+        <p>Realistic Planet Motion</p>
     </div>
 
     <div class="feature">
-        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Qibla">
-        <p>Qibla Direction</p>
+        <img src="https://cdn-icons-png.flaticon.com/512/4149/4149676.png" alt="Interaction">
+        <p>Interactive Exploration</p>
     </div>
 
     <div class="feature">
-        <img src="https://cdn-icons-png.flaticon.com/512/3898/3898082.png" alt="Languages">
-        <p>Multiple Languages</p>
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="Education">
+        <p>Educational Content</p>
     </div>
 </div>
 
 <h2 class="fade">Information We Collect</h2>
 <p class="fade">
-The app does not collect or store personal information.
+This application does not collect, store, or share any personal or non-personal user data. All features are available without requiring user registration or personal information.
+</p>
+
+<h2 class="fade">Permissions</h2>
+<p class="fade">
+The app may request basic device permissions only to improve functionality and performance. No personal data is accessed or stored.
+</p>
+
+<h2 class="fade">Third-Party Services</h2>
+<p class="fade">
+This application does not use third-party advertising or analytics services and does not share any user data with external parties.
+</p>
+
+<h2 class="fade">Children’s Privacy</h2>
+<p class="fade">
+This app is designed for educational purposes and is safe for all age groups. We do not knowingly collect any data from children.
+</p>
+
+<h2 class="fade">Changes to This Policy</h2>
+<p class="fade">
+We may update this Privacy Policy from time to time. Any updates will be posted on this page.
 </p>
 
 <h2 class="fade">Contact</h2>
@@ -179,7 +191,6 @@ Email: omran_adam@yahoo.com
 <button class="top-btn" id="topBtn">↑</button>
 
 <script>
-// fade animation (أفضل من scroll)
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -190,7 +201,6 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.fade').forEach(el => observer.observe(el));
 
-// top button
 const topBtn = document.getElementById("topBtn");
 
 window.addEventListener("scroll", () => {
