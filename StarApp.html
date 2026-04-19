@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -139,7 +139,7 @@ p {
 
 <h2 class="fade">About the App</h2>
 <p class="fade">
-Quran Pro is an application designed to provide accurate prayer times, Qibla direction, Islamic content, and useful tools for Muslims worldwide.
+Quran Pro is an application designed to provide accurate prayer times, Qibla direction, Islamic content, and useful tools for Muslims worldwide. The app is designed to be simple, fast, and reliable, with support for offline use and multiple features to enhance user experience.
 </p>
 
 <h2 class="fade">Features</h2>
@@ -148,21 +148,57 @@ Quran Pro is an application designed to provide accurate prayer times, Qibla dir
         <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
         <p>Accurate Prayer Times</p>
     </div>
-
     <div class="feature">
         <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png">
         <p>Qibla Direction</p>
     </div>
-
     <div class="feature">
-        <img src="https://cdn-icons-png.flaticon.com/512/3898/3898082.png">
+     <img src="https://cdn-icons-png.flaticon.com/512/3898/3898082.png">
         <p>Multiple Languages</p>
     </div>
+    
+    
+    
 </div>
 
 <h2 class="fade">Information We Collect</h2>
 <p class="fade">
-The app does not collect or store personal information.
+The app does not collect, store, or share any personal or non-personal information. Location data may be used only to provide core features such as prayer times and Qibla direction. This data is not stored, shared, or transmitted.
+</p>
+
+<h2 class="fade">Permissions</h2>
+<p class="fade">
+The app may request access to your location to provide accurate prayer times and Qibla direction. You can control or disable permissions at any time through your device settings.
+</p>
+
+<h2 class="fade">Third-Party Services</h2>
+<p class="fade">
+    The app does not use any third-party advertising services and does not share user data with advertisers. The app may use location data only to provide core features such as prayer times and Qibla direction. This data is not stored, shared, or transmitted.
+</p>
+
+<h2 class="fade">Data Security</h2>
+<p class="fade">
+We take appropriate security measures to protect your information and prevent unauthorized access, alteration, or disclosure.
+</p>
+
+<h2 class="fade">Children’s Privacy</h2>
+<p class="fade">
+This application is not intended for children under the age of 13, and we do not knowingly collect personal data from children.
+</p>
+
+<h2 class="fade">Data Retention</h2>
+<p class="fade">
+We do not store personal data unnecessarily. Any data used is limited to improving app performance and functionality.
+</p>
+
+<h2 class="fade">Your Rights</h2>
+<p class="fade">
+You have the right to control your data, disable permissions, or uninstall the app at any time.
+</p>
+
+<h2 class="fade">Changes to This Policy</h2>
+<p class="fade">
+We may update this Privacy Policy from time to time. Any changes will be posted on this page.
 </p>
 
 <h2 class="fade">Contact</h2>
@@ -178,7 +214,6 @@ Email: omran_adam@yahoo.com
 <script>
 // animation
 const faders = document.querySelectorAll('.fade');
-
 window.addEventListener('scroll', () => {
     faders.forEach(el => {
         if (el.getBoundingClientRect().top < window.innerHeight - 50) {
@@ -187,17 +222,11 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// top button fix
-const topBtn = document.getElementById("topBtn");
-
-window.addEventListener("scroll", () => {
-    topBtn.style.display =
-        document.documentElement.scrollTop > 300 ? "block" : "none";
-});
-
-topBtn.addEventListener("click", () => {
-    window.scrollTo({top: 0, behavior: 'smooth'});
-});
+// top button
+window.onscroll = () => {
+    topBtn.style.display = document.documentElement.scrollTop > 300 ? "block" : "none";
+};
+topBtn.onclick = () => window.scrollTo({top:0, behavior:'smooth'});
 </script>
 
 </body>
